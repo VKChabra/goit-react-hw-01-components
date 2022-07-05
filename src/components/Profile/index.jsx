@@ -1,4 +1,4 @@
-import user from '../../backend/user.json';
+import user from '../../backend/Profile/user.json';
 import PropTypes from 'prop-types';
 import './style.css';
 
