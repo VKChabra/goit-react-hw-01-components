@@ -1,9 +1,8 @@
-import user from '../../backend/Profile/user.json';
 import PropTypes from 'prop-types';
 import './style.css';
 
-export const Profile = () => {
-  const { username, tag, location, avatar, stats } = user;
+export const Profile = ({ users }) => {
+  const { username, tag, location, avatar, stats } = users;
   return (
     <div className="profile">
       <div className="description">
@@ -32,14 +31,16 @@ export const Profile = () => {
 };
 
 Profile.propTypes = {
-  username: PropTypes.number,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  stats: PropTypes.shape({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+  users: PropTypes.shape({
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    stats: PropTypes.shape({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+    }),
   }),
 };
 
