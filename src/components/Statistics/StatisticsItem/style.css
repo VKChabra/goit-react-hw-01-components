@@ -1,0 +1,30 @@
+.stat-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.stat-list .item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 50px;
+
+  gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.stat-list .item:last-child {
+  border-right: 0;
+}
+
+.stat-list .item .percentage {
+  font-weight: bold;
+}
