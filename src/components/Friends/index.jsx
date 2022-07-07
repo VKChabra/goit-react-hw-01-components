@@ -3,14 +3,12 @@ import './style.css';
 
 export const Friends = ({ friends }) => {
   const friendsList = friends.map(e => {
-    // const checkOnline = (online) => {
-    //     online === true ? return true : return false;
-    // }
+    const checkIfOnline = e => (e.isOnline === true ? 'online' : 'offline');
     return (
       <li className="item" key={e.id}>
-        {/* <span className="status">{checkOnline(e.isOnline)}</span> */}
-        <img className="avatar" src="" alt="User avatar" width="48" />
-        <p className="name"></p>
+        <span className={`status ${checkIfOnline(e)}`}></span>
+        <img className="avatar" src={e.avatar} alt="User avatar" width="48" />
+        <p className="name">{e.name}</p>
       </li>
     );
   });

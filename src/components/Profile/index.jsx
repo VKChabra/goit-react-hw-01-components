@@ -15,15 +15,21 @@ export const Profile = ({ users }) => {
       <ul className="stats">
         <li>
           <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className="quantity">
+            {stats.followers.toLocaleString('en-US')}
+          </span>
         </li>
         <li>
           <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className="quantity">
+            {stats.views.toLocaleString('en-US')}
+          </span>
         </li>
         <li>
           <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className="quantity">
+            {stats.likes.toLocaleString('en-US')}
+          </span>
         </li>
       </ul>
     </div>

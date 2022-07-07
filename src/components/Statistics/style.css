@@ -35,6 +35,10 @@
   border-right: 1px solid #000;
 }
 
+.stat-list .item:last-child {
+  border-right: 0;
+}
+
 .stat-list .item .percentage {
   font-weight: bold;
 }
