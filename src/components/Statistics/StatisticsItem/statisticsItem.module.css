@@ -1,20 +1,9 @@
-.profile .stats {
-  display: flex;
-  justify-content: center;
-
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  background-color: white;
-}
-
-.profile .stats li {
+.item {
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  width: 70px;
+  width: 50px;
 
   gap: 5px;
   padding-top: 20px;
@@ -26,10 +15,10 @@
   border-right: 1px solid #000;
 }
 
-.profile .stats li:last-child {
+.item:last-child {
   border-right: 0;
 }
 
-.profile .stats .quantity {
+.item .percentage {
   font-weight: bold;
 }

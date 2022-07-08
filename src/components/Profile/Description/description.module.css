@@ -1,9 +1,9 @@
-.profile .avatar {
+.avatar {
   width: 150px;
   border-radius: 50%;
 }
 
-.profile .description {
+.description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +20,6 @@
   margin: 0;
 }
 
-.description .name {
+.name {
   font-weight: bold;
 }

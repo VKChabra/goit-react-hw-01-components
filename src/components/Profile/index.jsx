@@ -1,10 +1,10 @@
 import Description from './Description';
 import Stats from './Stats';
-import './style.css';
+import styles from './profile.module.css';
 
 export const Profile = ({ users }) => {
   return (
-    <div className="profile">
+    <div className={styles.profile}>
       <Description users={users} />
       <Stats users={users} />
     </div>

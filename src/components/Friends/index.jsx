@@ -1,9 +1,9 @@
 import Friend from './Friend';
-import './style.css';
+import styles from './friends.module.css';
 
 export const Friends = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <ul className={styles.friendsList}>
       <Friend friendsList={friends} />
     </ul>
   );
