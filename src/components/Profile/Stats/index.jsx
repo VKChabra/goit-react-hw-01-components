@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './stats.module.css';
 
-export const Stats = ({ users }) => {
-  const { stats } = users;
+export const Stats = ({ stats }) => {
   return (
     <ul className={styles.stats}>
       <li>
@@ -30,9 +29,9 @@ export const Stats = ({ users }) => {
 Stats.propTypes = {
   users: PropTypes.shape({
     stats: PropTypes.shape({
-      followers: PropTypes.number,
-      views: PropTypes.number,
-      likes: PropTypes.number,
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
     }),
   }),
 };

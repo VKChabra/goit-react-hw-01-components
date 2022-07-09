@@ -2,7 +2,7 @@ import usersData from 'backend/Profile/user.json';
 import statisticsData from 'backend/Statistics/data.json';
 import friendsList from 'backend/Friends/friends.json';
 import transactionHistory from 'backend/Transactions/transactions.json';
-import styles from 'components/App.module.css';
+import styles from 'components/App/app.module.css';
 import Profile from 'components/Profile';
 import Statistics from 'components/Statistics';
 import Friends from 'components/Friends';

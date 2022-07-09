@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './description.module.css';
 
-export const Description = ({ users }) => {
-  const { username, tag, location, avatar } = users;
+export const Description = ({ username, tag, location, avatar }) => {
   return (
     <div className={styles.description}>
       <img src={avatar} alt="User avatar" className={styles.avatar} />
@@ -15,10 +14,10 @@ export const Description = ({ users }) => {
 
 Description.propTypes = {
   users: PropTypes.shape({
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
   }),
 };
 
