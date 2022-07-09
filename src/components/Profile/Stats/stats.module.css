@@ -1,11 +1,9 @@
 .stats {
   display: flex;
   justify-content: center;
-
   list-style: none;
   padding: 0;
   margin: 0;
-
   background-color: white;
 }
 
@@ -13,15 +11,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
   width: 70px;
-
   gap: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 8px;
   padding-right: 8px;
-
   border-top: 1px solid #000;
   border-right: 1px solid #000;
 }

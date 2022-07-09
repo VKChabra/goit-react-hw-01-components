@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import StatisticsItem from './StatisticsItem';
 import styles from './statistics.module.css';
 
 export const Statistics = ({ stats, title }) => {
@@ -7,7 +6,12 @@ export const Statistics = ({ stats, title }) => {
     <section className={styles.statistics}>
       <h2 className={styles.title}>{title}</h2>
       <ul className={styles.statList}>
-        <StatisticsItem stats={stats} />
+        {stats.map(({ id, label, percentage }) => (
+          <li className={styles.item} key={id}>
+            <span className={styles.label}>{label}</span>
+            <span className={styles.percentage}>{percentage}%</span>
+          </li>
+        ))}
       </ul>
     </section>
   );
@@ -15,6 +19,13 @@ export const Statistics = ({ stats, title }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default Statistics;
