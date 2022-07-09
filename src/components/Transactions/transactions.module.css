@@ -4,6 +4,7 @@
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   box-shadow: 0 0 10px black;
+  margin-top: 40px;
 }
 
 .transactionHistory thead {
